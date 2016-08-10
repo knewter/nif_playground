@@ -1,0 +1,2 @@
+defmodule NifPlayground do
+end
