@@ -8,7 +8,12 @@ defmodule NifPlayground.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      compilers: [:make, :elixir, :app],
+     aliases: aliases(),
      deps: deps()]
+  end
+
+  defp aliases do
+    [clean: ["clean.make", "clean"]]
   end
 
   # Configuration for the OTP application
